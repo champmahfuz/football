@@ -1,0 +1,288 @@
+
+.flex{
+    display: flex;
+}
+.items-center{
+    align-items: center;
+}
+.justify-between{
+    justify-content: space-between;
+   
+}
+.btn{
+    padding: 0.8rem 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+.btn-primary{
+    background: rgb(247, 5, 5);
+    color: white;
+    border-radius: 10px;
+}
+
+.btn-primary:hover{
+    background: transparent;
+    border-color: turquoise;
+    color: lightseagreen;
+}
+
+.btn-secondary{
+    background: rgb(241, 7, 7);
+    color: white;
+    border-color: rgb(0, 153, 255);
+    border-radius: 10px;
+   
+	}
+
+.right img:hover{
+    transform: scale(1.2);
+    transition: transform 2s ease-in-out;
+    /* transform: scale(1.3) skew(-30deg); */
+    /* transform: scale(1,3) circle(-180deg);
+    transition: transform 2s ease-in-out; */
+
+    }
+
+.btn-secondary:hover{
+    background: rgb(81, 156, 81);
+    color: white;
+	transform: scale(1.2);
+}
+
+.fas{
+    margin-right: 10px;
+}
+
+.flex-1{
+    padding: 25px 100px;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    --webkit-font-smotting:antialiased;
+}
+
+header{
+    background-color: #161616;
+    
+
+}
+
+.container{
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* header section starts */
+
+header nav .left a {
+    color:#FFFFFF;
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all .3s ease;
+
+}
+header nav .left a:hover{
+    color: springgreen;
+}
+
+header nav {
+    padding: 2rem 0;
+}
+
+header nav .branding{
+    margin-right: 3rem;
+}
+
+.banner{
+    padding: 4.5rem 0;
+}
+
+
+.banner .right img{
+    /* width: 400px;
+    margin-right: 10px; */
+    
+width: 556.01px;
+height: 438px;
+left: 1299.01px;
+top: 153px;
+
+}
+
+
+
+
+
+.banner .left h2{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 64px;
+    color: white;
+    
+}
+
+
+
+.banner .left {
+    margin-top: -4rem;
+    
+}
+
+
+
+section{
+    padding: 1rem 0;
+}
+
+/* hrader section ends */
+
+/* players section starts */
+
+.players{
+    width: 100%;
+}
+.card-body{
+    display: grid;
+    padding: 30px 120px;
+    grid-template-columns: repeat(3,1fr);
+}
+.card{
+    padding: 14px;
+    margin: 20px;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    flex-direction: column;
+    box-shadow: 1px 1px 10px 2px #0000007c;
+    transition: .9s all ease;
+}
+.player-img img{
+    width: 100%;
+    max-height: 400px;
+    display: block;
+} 
+.player-info{
+    margin: 10px 0px;
+} 
+.player-info h1{
+    font-size: 28px;
+    font-weight: bold;
+}
+.player-info p{
+    font-size: 16px;
+} 
+
+/* players section ends*/
+
+/* match description starts here */
+.watch-now button{
+    margin-top: 30px;
+}
+/* match description ends here */
+
+/* fotter starts */
+.footer{
+    color: black;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.8rem;
+
+}
+.footer img{
+    width: 450px;
+    height: 100px;
+    left: 475px;
+    top: 3474px;
+    
+}
+.footer-menu a{
+    margin: 15px 0;
+    padding-right: 5px;
+    display: inline-block;
+    color: rgb(45, 46, 45);
+    font-size: 1.5rem;
+}
+
+
+.footer-menu a:hover{
+    color: rgb(220, 233, 232);
+   
+}
+
+.footer-desc{
+    font-size: 1.2rem;
+    padding-bottom: 5px;
+}
+
+/* fotter ends */
+@media only screen and (max-width:540px) {
+
+    /* Players Section*/
+    .card-body{
+        display: block;
+        padding: 30px 40px;
+    }
+    header nav .left a {
+        display: none;
+    
+    }
+    .btn{
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+
+}
+    .banner{
+        display: block;
+    }
+    
+    .banner .right img{     
+    width: 90%;
+    height: 150px;
+    left: 1299.01px;
+    top: 153px;
+    
+    }
+    
+    
+    .banner .left h2{
+        font-size: 2.7rem;
+        line-height: 1.2;
+        margin-bottom: 2rem;
+        font-size: 3rem;
+        color: white;
+        
+    }
+    
+    .banner .left {
+       margin-left: -50px;
+        
+    }
+
+    .footer img{
+        width: 80%;
+        height: 100px;
+        left: 475px;
+        top: 3474px;
+        
+    }
+
+}
+
